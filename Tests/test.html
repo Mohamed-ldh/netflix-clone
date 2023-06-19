@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Random Image</title>
+     <script>
+      window.onload = choosePic;
+
+      var myPix = new Array('C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\luther.jpg','C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\it.jpg','C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\breaking bad.jpg');
+
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+      }
+     </script>
+     <link rel="stylesheet" href="script01.css">
+</head>
+<body>
+     <img src="C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\fnaf.png" width="305" height="312" id="myPicture" alt="some image">
+</body>
+</html>

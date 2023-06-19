@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+
+
+
+  
+  <title>POP UP TEST</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans'>
+  
+<style>
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.modal-body {
+  display: flex;
+  padding: 0;
+  border-radius: 4rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.modal-content {
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+-moz-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+background-color: #191919
+}
+
+
+.column {
+  flex: 50%;
+  padding: 0px;
+  overflow-y: hidden;
+}
+
+.column#main {
+  flex: 75%;
+  padding-bottom: 800px;
+  overflow-y: hidden;
+}
+
+
+#main .form-control {
+  border-radius: 0;
+  font-size: .9em;
+}
+
+
+
+.btn-primary:hover {
+  border-color: rgba( 255, 255, 255, 0);
+}
+
+#main .btn-primary {
+  width: 100%;
+}
+#secondary .btn-primary {
+  background: #f8f9fa4f;
+  color: #000;
+}
+.modal-body label {
+  margin-bottom: 0;
+}
+.fade-effect {
+  height: 1000px;
+  position: absolute;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.btn-primary:hover {
+  border-color: rgba( 255, 255, 255, 0);
+}
+
+.sec-content {
+  margin-top: 85%;
+}
+#logo_info{
+  position: absolute;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  ⓘ More Info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="  width: 1050px; max-width:5000px; position: absolute; left: 400px;">
+  <div class="modal-dialog" role="document" style="  width: 1050px; max-width:5000px;">
+    <div class="modal-content" style="  width: 1050px; max-width:5000px;  ">
+      <div class="modal-body" style="  width: 1050px; max-width:5000px;   ;">
+        <div class="column" id="main" style="  width: 1050px; max-width:5000px;   ">
+          <div class="fade-effect" style="position: absolute; background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));  height: 100px;">
+            <img src="C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\peakyblinders_info_logo.jpg" alt="" id="logo_info" width="350" height="150" style="position: absolute; top: 300px; left: 50px;">
+            <img src="C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\aaaaa.jpg" alt="" width="1048" height="500" style="border-radius: 10px;">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  
+  
+</body>
+
+</html>

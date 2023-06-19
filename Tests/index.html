@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto-play video and show content on the same page</title>
+	<style>
+		#video-container {
+			position: relative;
+			height: 0;
+			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+		}
+		#video-container video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#content {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="video-container">
+		<video onloadstart="" autoplay onended="showContent()" loop src="C:\Users\mlabi\OneDrive\Bureau\Movie WebSite\Assets\startup.MKV" controls></video>
+	</div>
+	<div id="content">
+		<!-- Your content here -->
+	</div>
+	<script>
+		function showContent() {
+			document.getElementById("video-container").style.display = "none";
+			document.getElementById("content").style.display = "block";
+		}
+	</script>
+</body>
+</html>
